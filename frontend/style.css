@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+#leftSide {
+	background: #212121;
+	height: 100vh;
+}
+
+#right-side {
+	/* background: #fdc81c; */
+	background: #ffcb00;
+	height: 100vh;
+}
+
+li {
+	color: white;
+}
+
+#search-bar {
+	margin: 0 auto;
+	display: block;
+	margin-top: 100px;
+	border: none;
+	padding: 10px;
+	border-radius: 30px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-size: 2em;
+	/* width: 80%; */
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgba(255, 255, 255, 0.6);
+	font-weight: 100;
+	opacity: 1; /* Firefox */
+}
+
+.menu-item {
+	/* margin-bottom: 100px; */
+	/* margin-top: 100px; */
+	font-size: 50px;
+	text-align: left;
+
+	color: black;
+	font-weight: 100;
+	/*        background: red;*/
+	display: block;
+	text-align: center;
+	line-height: 25vh;
+	/*        background: red;*/
+}
+
+.menu-item.selected {
+	font-weight: 500;
+}
+
+.floor-name {
+	text-align: center;
+	/*        background: white;*/
+}
+
+.floor-name.selected {
+	font-weight: 500;
+}
+
+.scndfloor {
+	width: 100px;
+	height: 100px;
+	background: black;
+	display: block;
+}
+
+#room-root li {
+	text-align: center;
+	list-style-type: none;
+	margin-top: 50px;
+	font-weight: 100;
+	font-size: 2em;
+}
+
+button:focus {
+	outline: 0;
+}
+input:focus {
+	outline: 0;
+}
+
+.switch {
+	position: relative;
+	line-height: 34px;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	margin-left: 40px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #212121;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: '';
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: #fdbf00;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.light-on {
+	background: yellow !important;
+	transform: scale(1.2);
+}
+
+.switch {
+	background: black;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
